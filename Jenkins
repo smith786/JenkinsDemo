@@ -1,1 +1,41 @@
+pipeline {
+    agent any
 
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Software Requirement Specification') {
+            steps {
+                echo 'Document'
+            }
+        }
+        stage('Coding') {
+            steps {
+                echo 'Coding in Progress'
+            }
+        }
+        stage('Risk Evaluation') {
+            steps {
+                echo 'RMM Plan'
+            }
+        }
+        stage('Testing') {
+            steps {
+                echo 'Testing software'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Deployment in process'
+            }
+        }
+        stage('Release') {
+            steps {
+                echo 'Software Released'
+            }
+        }
+    }
+}
